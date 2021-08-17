@@ -6,8 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
-import type {Node} from 'react';
+import React, {Node} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -17,7 +16,6 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-
 import {
   Colors,
   DebugInstructions,
@@ -25,6 +23,12 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+// const spyFunction = msg => {
+//   console.log(msg.module);
+// };
+
+// MessageQueue.spy(spyFunction);
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
