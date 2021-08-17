@@ -7,11 +7,12 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "postinstall": "./scripts/fix-codegen"
   },
   "dependencies": {
     "react": "17.0.2",
-    "react-native": "0.65.0-rc.4"
+    "react-native": "github:facebook/react-native#aad9f3553b5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
