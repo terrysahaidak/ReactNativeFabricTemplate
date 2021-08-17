@@ -1,0 +1,8 @@
+#! /bin/sh
+
+cd ./node_modules
+rm -rf react-native-codegen
+cd react-native/packages/react-native-codegen
+yarn build
+cd ../
+cp -R ./react-native-codegen ../../react-native-codegen
